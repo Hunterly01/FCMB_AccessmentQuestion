@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 public class AuditLog {
     @Id
     private String id;
-    private String username;
+    private String email;
+    private String action;
     private LocalDateTime timeStamp = LocalDateTime.now();
 }
