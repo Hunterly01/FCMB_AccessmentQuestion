@@ -11,17 +11,12 @@ import java.time.LocalDateTime;
 public class Transaction {
     @Id
     private String id;
-    private String accountId;
     private double amount;
     private LocalDateTime date;
     private String description;
-    private double discount;
+    private String sourceAccount;
+    private double discountAmount;
+    private String destinationAccount;
     private TransactionType transactionType;
 
-
-    public enum TransactionType{
-        TRANSFER,
-        AIRTIME
-
-    }
 }
