@@ -4,6 +4,7 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Data
@@ -11,11 +12,11 @@ import java.time.LocalDateTime;
 public class Transaction {
     @Id
     private String id;
-    private double amount;
+    private BigDecimal amount;
     private LocalDateTime date;
     private String description;
     private String sourceAccount;
-    private double discountAmount;
+    private BigDecimal discountAmount;
     private String destinationAccount;
     private TransactionType transactionType;
 
