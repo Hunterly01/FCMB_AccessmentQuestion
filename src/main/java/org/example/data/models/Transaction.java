@@ -18,6 +18,7 @@ public class Transaction {
     private String sourceAccount;
     private BigDecimal discountAmount;
     private String destinationAccount;
+    private LocalDateTime createdAt;
     private TransactionType transactionType;
 
 }
